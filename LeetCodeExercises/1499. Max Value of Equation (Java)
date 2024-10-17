@@ -15,7 +15,6 @@ class Solution {
             if (!maxHeap.isEmpty())
                 ans = Math.max(ans, x + y + maxHeap.peek().getKey());
             maxHeap.offer(new Pair<>(y - x, x));
-            maxHeap.offer(new Pair<>(y - x, x));
         }
 
     return ans;
